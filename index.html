@@ -1,0 +1,291 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CPS Scavenger Hunt</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0b0b0f;
+    color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #6d28d9, #9333ea);
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: #111118;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.tabs button {
+    background: #22222c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tabs button:hover {
+    background: #9333ea;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+}
+
+
+.card {
+    background: #16161d;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(128,0,255,0.25);
+}
+
+
+.card h2 {
+    color: #c084fc;
+}
+
+
+ul {
+    line-height: 2;
+}
+
+
+.tab-content {
+    display: none;
+}
+
+
+.active {
+    display: block;
+}
+
+
+.hosts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 15px;
+}
+
+
+.host {
+    background: #22222c;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>CPS Scavenger Hunt</h1>
+
+<p>Find the hidden QR codes around the school</p>
+
+</header>
+
+
+
+<div class="tabs">
+
+<button onclick="openTab('info')">Info</button>
+
+<button onclick="openTab('rules')">Rules</button>
+
+<button onclick="openTab('credits')">Credits</button>
+
+</div>
+
+
+
+<div class="container">
+
+
+<div id="info" class="tab-content active">
+
+<div class="card">
+
+<h2>Scavenger Hunt Information</h2>
+
+<p>
+There will be QR codes placed all around the school.
+Your job is to find them using your phone or tablet.
+</p>
+
+<p>
+There will be real QR codes along with fake QR codes
+to make the scavenger hunt more challenging.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div id="rules" class="tab-content">
+
+<div class="card">
+
+<h2>Rules</h2>
+
+<ul>
+
+<li>No telling other players QR code locations</li>
+
+<li>Follow host and teacher instructions</li>
+
+<li>Be respectful</li>
+
+<li>Do not be a sore loser</li>
+
+<li>Have fun</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+
+<div id="credits" class="tab-content">
+
+<div class="card">
+
+<h2>Credits</h2>
+
+<p>
+<strong>Hosts:</strong>
+</p>
+
+<div class="hosts">
+
+<div class="host">
+Ryker
+</div>
+
+<div class="host">
+Keegan
+</div>
+
+<div class="host">
+Maggie
+</div>
+
+<div class="host">
+Ryder
+</div>
+
+</div>
+
+
+<br>
+
+<p>
+<strong>Website Maker:</strong> Ryder
+</p>
+
+<p>
+<strong>Script Holder:</strong> GitHub Pages
+</p>
+
+<p>
+<strong>Deployment:</strong> Vercel
+</p>
+
+<p>
+<strong>Code Language:</strong> HTML and JavaScript
+</p>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<footer>
+
+CPS Scavenger Hunt © 2026
+
+</footer>
+
+
+
+<script>
+
+function openTab(tabName){
+
+let tabs = document.getElementsByClassName("tab-content");
+
+for(let i = 0; i < tabs.length; i++){
+
+tabs[i].classList.remove("active");
+
+}
+
+document.getElementById(tabName).classList.add("active");
+
+}
+
+</script>
+
+
+</body>
+</html>
+```
